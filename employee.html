@@ -12,18 +12,12 @@
     <script>
         let a = Number(prompt("Enter the number"));
 
-        switch (a) {
+        switch ((a > 0) ? 1 : (a < 0) ? -1 : 0) {
             case (1):
-            case (2):
-            case (3):
-            case (4):
                 alert("1");
                 break;
             case (-1):
-            case (-2):
-            case (-3):
-            case (-4):
-                alert("-s1");
+                alert("-1");
                 break;
             default: {
                 alert('0')
